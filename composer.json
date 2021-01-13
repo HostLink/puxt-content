@@ -1,0 +1,18 @@
+{
+    "name": "hostlink/puxt-content",
+    "description": "A content module for puxt",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Raymond Chong",
+            "email": "mathsgod@yahoo.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "\\PUXT\\": "src"
+        }
+    }
+}
