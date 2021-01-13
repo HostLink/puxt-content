@@ -10,9 +10,6 @@ class Content
     public function __construct(string $path)
     {
 
-        echo $path;
-        die();
-
         if (file_exists("content/" . $path . ".json")) {
             $this->data = json_decode(file_get_contents("content/" . $path . ".json"), true);
         }
