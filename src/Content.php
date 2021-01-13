@@ -9,7 +9,13 @@ class Content
 
     public function __construct(string $path)
     {
-        $this->data = json_decode(file_get_contents("content/" . $path . ".json"), true);
+
+        echo $path;
+        die();
+
+        if (file_exists("content/" . $path . ".json")) {
+            $this->data = json_decode(file_get_contents("content/" . $path . ".json"), true);
+        }
     }
 
     public function fetch()
